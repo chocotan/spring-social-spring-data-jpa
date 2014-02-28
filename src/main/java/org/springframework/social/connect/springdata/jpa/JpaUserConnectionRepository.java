@@ -16,6 +16,7 @@ package org.springframework.social.connect.springdata.jpa;
  */
 import java.util.List;
 
+import org.springframework.data.repository.query.Param;
 import org.springframework.social.connect.springdata.UserConnectionRepository;
 import org.springframework.stereotype.Repository;
 
@@ -26,6 +27,6 @@ import org.springframework.stereotype.Repository;
 public interface JpaUserConnectionRepository extends
 		UserConnectionRepository<JpaUserConnectionKey,JpaUserConnection> {
 
-	List<JpaUserConnection> findByUserConnectionKeyProviderIdAndUserConnectionKeyProviderUserId(String providerId,String providerUserId);
+	List<JpaUserConnection> findByUserConnectionKeyProviderIdAndUserConnectionKeyProviderUserId(@Param("providerId") String providerId,@Param("providerUserId") String providerUserId);
 
 }
