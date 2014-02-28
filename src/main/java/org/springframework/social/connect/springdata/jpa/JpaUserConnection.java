@@ -1,14 +1,6 @@
 package org.springframework.social.connect.springdata.jpa;
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
-
-import org.springframework.social.connect.springdata.UserConnection;
-
 /*
- * Copyright 2011 the original author or authors.
+ * Copyright 2014 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,6 +14,12 @@ import org.springframework.social.connect.springdata.UserConnection;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
+
+import org.springframework.social.connect.springdata.UserConnection;
 
 /**
  * @author Michael Lavelle
