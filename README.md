@@ -1,6 +1,10 @@
 spring-social-spring-data-jpa
 ==================================
 
+
+Spring Social UsersConnectionRepository implementation using a SpringData JPA Repository for persistence as an alternative to JDBC versions in spring-social-core
+
+
 ## Quick Start ##
 
 - 1. Download the jar though Maven:
