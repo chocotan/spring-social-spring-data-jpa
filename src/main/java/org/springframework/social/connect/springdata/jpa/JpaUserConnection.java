@@ -14,8 +14,8 @@ package org.springframework.social.connect.springdata.jpa;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
@@ -30,7 +30,7 @@ import org.springframework.social.connect.springdata.UserConnection;
 public class JpaUserConnection implements
 		UserConnection<JpaUserConnectionKey> {
 
-	@Id
+	@EmbeddedId
 	private JpaUserConnectionKey userConnectionKey = new JpaUserConnectionKey();
 
 	private String accessToken;
