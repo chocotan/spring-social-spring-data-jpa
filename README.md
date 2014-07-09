@@ -19,7 +19,7 @@ Spring Social UsersConnectionRepository implementation using a SpringData JPA Re
 
 ```xml
 <dependency>
-  <groupId>org/springframework/social</groupId>
+  <groupId>org.springframework.social</groupId>
   <artifactId>spring-social-spring-data-jpa</artifactId>
   <version>1.1.0-SNAPSHOT</version>
 </dependency>
